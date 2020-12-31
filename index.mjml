@@ -1,0 +1,10 @@
+<mjml>
+    <mj-body>
+        <!-- The first component, mj-basic-component renders as a column child -->
+        <mj-section>
+            <mj-column>
+                <mj-basic color="green"> I'm among stars here </mj-basic>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>

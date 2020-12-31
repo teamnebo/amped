@@ -11,6 +11,7 @@ import MjApi from './MjApi'
 import MjSectionModel from './MjSection/index'
 import MjButtonModel from './MjButton/index'
 import MjContainerModel from './MjContainer'
+import MjBasicModel from './MjBasic/index'
 
 export default [
     {
@@ -52,5 +53,9 @@ export default [
     {
         type: TYPE_CONSTANT.TYPE_MJ_SPACER,
         model: MjSpacerModel
+    },
+    {
+        type: TYPE_CONSTANT.TYPE_MJ_BASIC,
+        model: MjBasicModel
     }
 ]

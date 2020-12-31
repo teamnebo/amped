@@ -7,6 +7,9 @@ import MjImageModel from '../../models/MjModels/MjImage'
 import MjSpacer from './MjSpacer'
 import MjSpacerModel from '../../models/MjModels/MjSpacer'
 
+import MjBasic from './MjBasic'
+import MjBasicModel from '../../models/MjModels/MjBasic'
+
 import MjSocial from './MjSocial'
 import MjSocialModel from '../../models/MjModels/MjSocial'
 
@@ -54,5 +57,10 @@ export default [
         type: MjApiModel.type,
         model: MjApiModel,
         component: MjApi
+    },
+    {
+        type: MjBasicModel.type,
+        model: MjBasicModel,
+        component: MjBasic
     }
 ]

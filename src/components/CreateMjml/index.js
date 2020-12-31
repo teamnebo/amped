@@ -11,6 +11,7 @@ import SpacerSVG from '../../ui/svg/spacer'
 const MjText = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_TEXT }).model
 const MjImage = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_IMAGE }).model
 const MjSpacer = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_SPACER }).model
+const MjBasic = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_BASIC }).model
 const MjDivider = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_DIVIDER }).model
 const MjSocial = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_SOCIAL }).model
 const MjButton = find(MjmlPreview, { type: MJ_CONSTANT.TYPE_MJ_BUTTON }).model
@@ -94,6 +95,19 @@ export default [
         params: {
             type: MJ_CONSTANT.TYPE_MJ_SOCIAL,
             attributes: new MjSocial().getAttributes()
+        }
+    },
+    {
+        active: true,
+        component: MjCreateComponent,
+        props: {
+            name: 'Basic',
+            tags: ['picture', 'img'],
+            icon: 'image'
+        },
+        params: {
+            type: MJ_CONSTANT.TYPE_MJ_BASIC,
+            attributes: new MjBasic().getAttributes()
         }
     }
 ]

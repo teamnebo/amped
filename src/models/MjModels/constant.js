@@ -4,5 +4,6 @@ export const TYPE_MJ_IMAGE = 3
 export const TYPE_MJ_SPACER = 4
 export const TYPE_MJ_SOCIAL = 5
 export const TYPE_MJ_BUTTON = 6
+export const TYPE_MJ_BASIC = 7
 
 export const TYPE_MJ_API = 200
