@@ -102,8 +102,8 @@ export default [
         component: MjCreateComponent,
         props: {
             name: 'Basic',
-            tags: ['picture', 'img'],
-            icon: 'image'
+            tags: ['basic'],
+            icon: TextSVG
         },
         params: {
             type: MJ_CONSTANT.TYPE_MJ_BASIC,

@@ -55,7 +55,7 @@ const schemaStyle = assignIn(schemaPaddings, {
 
 const schemaAttributes = assignIn(
     cloneDeep(PaddingDetailSchema),
-    cloneDeep(ContainerBackgroundColorSchema),
+    // cloneDeep(ContainerBackgroundColorSchema),
     {
         color: obj => {
             if (isUndefined(obj.color)) {

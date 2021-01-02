@@ -1,8 +1,6 @@
-## :fr: Documentation
+This file contains factorized modules for any type of builder based on a principle of: section - colonone / component
 
-Ce dossier contient des modules factorisés pour tout type de builder basé sur un principe de : section - colonone /composant
-
-L'index permet d'exposer la totalité de la lib.
+The index is used to expose the entire lib.
 
 -   [Components](https://github.com/Gmulti/brick-builder/tree/master/src/application/builder/lib/components)
 -   [DND](https://github.com/Gmulti/brick-builder/tree/master/src/application/builder/lib/dnd)

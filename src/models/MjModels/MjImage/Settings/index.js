@@ -119,23 +119,23 @@ export default [
         },
         order: 1,
         group: 3
-    },
-    {
-        active: true,
-        type: BACKGROUND_COLOR,
-        attributes: {
-            styleKey: 'container-background-color',
-            handleChangeSelector: index => {
-                const img = selectorImg(index)
-                if (isNull(img)) {
-                    return null
-                }
-
-                return img.parentNode.parentNode.parentNode.parentNode
-                    .parentNode.parentNode
-            }
-        },
-        order: 2,
-        group: 3
     }
+    // {
+    //     active: true,
+    //     type: BACKGROUND_COLOR,
+    //     attributes: {
+    //         styleKey: 'container-background-color',
+    //         handleChangeSelector: index => {
+    //             const img = selectorImg(index)
+    //             if (isNull(img)) {
+    //                 return null
+    //             }
+
+    //             return img.parentNode.parentNode.parentNode.parentNode
+    //                 .parentNode.parentNode
+    //         }
+    //     },
+    //     order: 2,
+    //     group: 3
+    // }
 ]

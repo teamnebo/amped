@@ -11,8 +11,8 @@ const schemaStyle = {}
 const schemaAttributes = assignIn(
     cloneDeep(PaddingDetailSchema),
     cloneDeep(BorderDetailSchema),
-    cloneDeep(WidthSchema),
-    cloneDeep(ContainerBackgroundColorSchema)
+    cloneDeep(WidthSchema)
+    // cloneDeep(ContainerBackgroundColorSchema)
 )
 
 const mjmlObject = {

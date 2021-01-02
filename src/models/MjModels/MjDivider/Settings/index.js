@@ -91,23 +91,23 @@ export default [
         },
         order: 1,
         group: 3
-    },
-    {
-        active: true,
-        type: BACKGROUND_COLOR,
-        attributes: {
-            handleChangeSelector: index => {
-                const select = document.querySelector(`#${index} p`)
-                if (select) {
-                    return select.parentNode
-                }
-
-                return null
-            },
-            styleKey: 'container-background-color',
-            styleKeyJS: 'backgroundColor'
-        },
-        order: 2,
-        group: 3
     }
+    // {
+    //     active: true,
+    //     type: BACKGROUND_COLOR,
+    //     attributes: {
+    //         handleChangeSelector: index => {
+    //             const select = document.querySelector(`#${index} p`)
+    //             if (select) {
+    //                 return select.parentNode
+    //             }
+
+    //             return null
+    //         },
+    //         styleKey: 'container-background-color',
+    //         styleKeyJS: 'backgroundColor'
+    //     },
+    //     order: 2,
+    //     group: 3
+    // }
 ]

@@ -1,4 +1,4 @@
-import { mjml2html } from 'mjml'
+import mjml2html from 'mjml-browser'
 import { each } from 'lodash'
 
 import transformMjStructure from './transformMjStructure'
@@ -31,6 +31,8 @@ export default function transformStructureToMjml(config, params) {
     }
 
     _mjml.children.push(_childrenBody)
+
+    console.log(JSON.stringify(_mjml));
 
     return mjml2html(_mjml)
 }

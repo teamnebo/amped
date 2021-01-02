@@ -1,7 +1,7 @@
 import { extend, isUndefined } from 'lodash'
 import Morphism from 'morphism'
 
-export default class BaseMj {
+export default class BaseModel {
     getSettings = () => {
         return this.settings || {}
     }
@@ -14,20 +14,6 @@ export default class BaseMj {
 
     get schemaObj() {
         return this.schema || {}
-    }
-
-    getMjmlSchema() {
-        // DEPRECATED : Remove this and replace by .mjmlSchema
-
-        if (!this.getSchema()) {
-            return {}
-        }
-
-        return this.getSchema().mjmlObject
-    }
-
-    get mjmlSchema() {
-        return !this.schemaObj ? {} : this.schemaObj.mjmlObject
     }
 
     getIndex() {

@@ -1,22 +1,33 @@
 import React, { Component } from 'react'
 import jQuery from 'jquery'
-import { mjml2html } from 'mjml'
+import mjml2html from 'mjml-browser'
 import transformMjComponentAlone from '../../helpers/transformStructureToMjml/transformMjComponentAlone'
+import BaseMj from '../../models/MjModels/Base'
 
 export const previewComponent = ComposedComponent => {
     return ComposedComponent =>
         class extends Component {
             getIndex = () => {
                 const { component } = this.props
-
+                console.log(component.getIndex());
                 return component.getIndex()
             }
 
             getHtml = () => {
                 const { component } = this.props
 
-                const element = transformMjComponentAlone(component)
-                const result = mjml2html(element)
+                let options = {
+                    useMjmlConfigOptions: false,
+                    mjmlConfigPath: null,
+                    filePath: null
+                };
+                
+                let result = '<div>Wooh!</div>';
+                console.log(Object.getPrototypeOf(component));
+                if (component instanceof BaseMj) {
+                    const element = transformMjComponentAlone(component)
+                    result = mjml2html(element, options)
+                }
 
                 return result
             }

@@ -16,7 +16,7 @@ function transformColorIcon(obj, key) {
 const schemaStyle = {}
 
 const schemaAttributes = assignIn(
-    cloneDeep(ContainerBackgroundColorSchema),
+    // cloneDeep(ContainerBackgroundColorSchema),
     cloneDeep(PaddingDetailSchema),
     {
         'facebook-icon-color': transformColorIcon.bind('facebook-icon-color'),

@@ -15,12 +15,11 @@ function mapStateToProps(state, ownProps) {
 @previewComponent()
 class MjBasic extends Component {
     render() {
-        const { extractComponentHtml, getHtml, getIndex } = this.props
-
-        const _html = extractComponentHtml(getHtml().html)
+        console.log(this.props);
+        const { component, getHtml, getIndex } = this.props
 
         return (
-            <div id={getIndex()} dangerouslySetInnerHTML={{ __html: _html }} />
+            <div id={getIndex()} >{component.content}</div>
         )
     }
 }

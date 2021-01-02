@@ -15,8 +15,9 @@
         "font-awesome": "^4.7.0",
         "fuse.js": "^3.4.5",
         "jquery": "^3.4.1",
+        "json2mjml": "^1.0.3",
         "lodash": "^4.17.11",
-        "mjml": "^3.3.5",
+        "mjml-browser": "latest",
         "morphism": "^1.12.0",
         "normalize.css": "^7.0.0",
         "prop-types": "^15.7.2",
@@ -70,6 +71,7 @@
         ]
     },
     "devDependencies": {
+        "mjml": "latest",
         "@babel/core": "7.4.3",
         "@babel/register": "^7.10.4",
         "@babel/plugin-proposal-decorators": "^7.4.4",

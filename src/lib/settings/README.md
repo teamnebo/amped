@@ -1,8 +1,6 @@
-## :fr: Documentation
+This module contains all the business logic of settings for a builder built on the architecture: section - column - component
 
-Ce module contient toute la logique métier de settings pour un builder construit sur l'architecture : section - colonne - composant
-
-L'index permet d'exposer la totalité de la lib.
+The index is used to expose the entire lib.
 
 Les dépendances :
 

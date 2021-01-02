@@ -16,14 +16,14 @@ const schemaAttributes = assignIn(
     cloneDeep(BorderDetailSchema),
     cloneDeep(WidthSchema),
     cloneDeep(HeightSchema),
-    cloneDeep(ContainerBackgroundColorSchema),
+    // cloneDeep(ContainerBackgroundColorSchema),
     {
-        'background-color': obj => {
-            if (isUndefined(obj['background-color'])) {
-                return null
-            }
-            return Helpers.transformColorSelector(obj['background-color'])
-        },
+        // 'background-color': obj => {
+        //     if (isUndefined(obj['background-color'])) {
+        //         return null
+        //     }
+        //     return Helpers.transformColorSelector(obj['background-color'])
+        // },
         'border-radius': obj => {
             if (isUndefined(obj['border-radius'])) {
                 return null

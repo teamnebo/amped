@@ -17,6 +17,7 @@ const schemaAttributes = {
 }
 
 const mjmlObject = {
+    content: 'content',
     attributes: {
         path: 'attributes',
         fn: (attributes, obj) => {

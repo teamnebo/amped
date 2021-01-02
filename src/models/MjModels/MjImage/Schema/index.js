@@ -12,7 +12,7 @@ const schemaAttributes = assignIn(
     cloneDeep(PaddingDetailSchema),
     cloneDeep(WidthSchema),
     cloneDeep(HeightSchema),
-    cloneDeep(ContainerBackgroundColorSchema),
+    // cloneDeep(ContainerBackgroundColorSchema),
     {
         src: 'src',
         href: 'href',

@@ -49,15 +49,36 @@ class Header extends Component {
             }
         )
 
-        var newWin = window.open('url', 'Preview ', 'height=600,width=600')
-        newWin.document.write(_tpl.html)
+        // var newWin = window.open('url', 'Preview ', 'height=600,width=600')
+        // newWin.document.write(_tpl.html)
+    }
+
+    download = () => {
+        const { config } = this.props
+        
+
+        const _tpl = transformStructureToMjml(
+            constructStructureTemplating(config),
+            {
+                container: assignIn(new MjContainer(), config.container)
+            }
+        )
+
+        console.log(_tpl.html);
+        // const element = document.createElement("a");
+        // const file = new Blob([_tpl.html], {type: 'text/html'});
+        // element.href = URL.createObjectURL(file);
+        // element.download = "email.html";
+        // document.body.appendChild(element); // Required for this to work in FireFox
+        // element.click();
     }
 
     render() {
         const { config } = this.props
+        console.log(config);
         headLinkFont(config.components)
 
-        return <Toolbar onClickPreview={this.openPreview} />
+        return <Toolbar onClickPreview={this.openPreview} onClickDownload={this.download} />
     }
 }
 

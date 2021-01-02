@@ -1,5 +1,5 @@
 import Schema from './Schema'
-import BaseMj from '../Base'
+import BaseMj from '../Base/mj'
 import Column from '../../../lib/components/models/Column'
 
 export default class MjColumn extends BaseMj {

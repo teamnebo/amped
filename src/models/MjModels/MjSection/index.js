@@ -1,6 +1,6 @@
 import { cloneDeep } from 'lodash'
 import Schema from './Schema'
-import BaseMj from '../Base'
+import BaseMj from '../Base/mj'
 import DEFAULT_ATTRIBUTES from './DefaultAttributes'
 
 import Settings from './Settings'

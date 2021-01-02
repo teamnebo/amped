@@ -1,6 +1,5 @@
 
 import tranformMjComponent from "../transformMjComponent"
-import { mjml2html } from "mjml"
 
 export default function transformMjComponentAlone(obj){
 

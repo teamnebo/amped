@@ -1,8 +1,6 @@
-## :fr: Documentation
+This module contains all the business logic of templating for a builder built on the architecture: section - column - component
 
-Ce module contient toute la logique métier de templating pour un builder construit sur l'architecture : section - colonne - composant
-
-Cela peut concerner la suppression d'un composant comme sa duplication.
+This can concern the removal of a component such as its duplication.
 
 Les dépendances :
 

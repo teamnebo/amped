@@ -32,7 +32,7 @@ const SCToolbarAction = styled.div`
 
 class Toolbar extends React.Component {
     render() {
-        const { onClickPreview, onClickDone } = this.props
+        const { onClickPreview, onClickDownload, onClickDone } = this.props
         return (
             <SCToolbarWrap>
                 <SCToolbarTools>
@@ -44,6 +44,9 @@ class Toolbar extends React.Component {
                 <SCToolbarAction>
                     {!!onClickPreview && (
                         <Button onClick={onClickPreview}>Preview</Button>
+                    )}
+                    {!!onClickDownload && (
+                        <Button onClick={onClickDownload}>Download</Button>
                     )}
                     {!!onClickDone && (
                         <ButtonPrimary>
