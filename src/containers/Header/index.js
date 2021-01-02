@@ -75,7 +75,6 @@ class Header extends Component {
 
     render() {
         const { config } = this.props
-        console.log(config);
         headLinkFont(config.components)
 
         return <Toolbar onClickPreview={this.openPreview} onClickDownload={this.download} />

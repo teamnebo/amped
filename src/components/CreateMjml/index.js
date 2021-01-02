@@ -101,7 +101,7 @@ export default [
         active: true,
         component: MjCreateComponent,
         props: {
-            name: 'Basic',
+            name: 'AMP comp',
             tags: ['basic'],
             icon: TextSVG
         },

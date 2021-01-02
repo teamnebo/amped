@@ -9,7 +9,6 @@ export const previewComponent = ComposedComponent => {
         class extends Component {
             getIndex = () => {
                 const { component } = this.props
-                console.log(component.getIndex());
                 return component.getIndex()
             }
 
@@ -23,7 +22,6 @@ export const previewComponent = ComposedComponent => {
                 };
                 
                 let result = '<div>Wooh!</div>';
-                console.log(Object.getPrototypeOf(component));
                 if (component instanceof BaseMj) {
                     const element = transformMjComponentAlone(component)
                     result = mjml2html(element, options)

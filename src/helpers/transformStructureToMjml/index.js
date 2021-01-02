@@ -13,26 +13,21 @@ export default function transformStructureToMjml(config, params) {
     }
 
     const _transformContainer = transformMjComponent(params.container)
-    const _childrensContainer = {
-        tagName: 'mj-container',
-        attributes: _transformContainer.attributes,
-        children: []
-    }
-
-    const _items = transformMjStructure(config, MjSection.type)
-    each(_items, mjSection => {
-        _childrensContainer.children.push(mjSection)
-    })
 
     const _childrenBody = {
         tagName: 'mj-body',
-        attributes: {},
-        children: [_childrensContainer]
+        attributes: _transformContainer.attributes,
+        children: []
     }
+    
+    const _items = transformMjStructure(config, MjSection.type)
+    each(_items, mjSection => {
+        _childrenBody.children.push(mjSection)
+    })
+
 
     _mjml.children.push(_childrenBody)
 
     console.log(JSON.stringify(_mjml));
-
     return mjml2html(_mjml)
 }

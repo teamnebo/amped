@@ -15,7 +15,6 @@ function mapStateToProps(state, ownProps) {
 @previewComponent()
 class MjBasic extends Component {
     render() {
-        console.log(this.props);
         const { component, getHtml, getIndex } = this.props
 
         return (
